@@ -1,5 +1,10 @@
 import { useState } from 'react'
 import { Effect } from './Effect';
+import { EffectAvatar } from './EffectAvatar';
+import { EffectChatApp } from './EffectChatApp';
+import { EffectLayout } from './EffectLayout';
+import { EffectTimer } from './EffectTimer';
+import { Ref } from './Ref';
 
 function App() {
   // const order = [100, 200, 300]
@@ -35,7 +40,7 @@ function App() {
   return (
     <div style={{ padding: '10%' }}>
       <button onClick={() => { setShow(!show) }}>Toggle</button>
-      {show && <Effect />}
+      {show && <Ref />}
     </div>
   )
 
